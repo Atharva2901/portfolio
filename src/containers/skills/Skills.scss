@@ -11,7 +11,7 @@
 }
 
 .skills-main-div > * {
-  flex: 1;
+  // flex: 1;
   margin-bottom: 30px;
 }
 
@@ -19,6 +19,21 @@
   max-width: 100%;
   height: auto;
 }
+
+.skills-list {
+  width: 100%;         /* make div span the full container width */
+  max-width: 900px;    /* optional: keep it neat on wide screens */
+  margin: 0 auto;      /* center the div horizontally */
+  text-align: left;    /* keep bullets aligned neatly to the left */
+  padding: 0 20px;     /* some breathing room on both sides */
+}
+
+.skills-list p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 
 .skills-heading {
   font-size: 56px;

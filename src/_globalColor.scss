@@ -88,3 +88,35 @@ $medium: #000;
 $stackoverflow: #f48024;
 $instagram: #c13584;
 $kaggle: #20beff;
+
+.software-skill-inline i {
+  font-size: 3rem;       /* make icons larger */
+  margin: 10px;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Default: show brand colors instead of gray */
+.software-skill-inline .fa-html5 { color: #E44D26; }    /* orange */
+.software-skill-inline .fa-css3-alt { color: #264de4; } /* blue */
+.software-skill-inline .fa-js { color: #f7df1e; }       /* yellow */
+.software-skill-inline .fa-react { color: #61DBFB; }    /* cyan */
+.software-skill-inline .fa-node { color: #3C873A; }     /* green */
+.software-skill-inline .fa-python { color: #3776AB; }   /* blue */
+.software-skill-inline .fa-database { color: #f29111; } /* orange (SQL style) */
+.software-skill-inline .fa-docker { color: #0db7ed; }   /* blue */
+.software-skill-inline .fa-git-alt { color: #f1502f; }
+.software-skill-inline .fa-leaf { color: #4DB33D; }        /* MongoDB */
+.software-skill-inline .fa-github { color: #000000; }      /* GitHub Actions */
+.software-skill-inline .fa-project-diagram { color: #326CE5; } /* Kubernetes */
+.software-skill-inline .fa-flask { color: #000000; }       /* Flask */
+.software-skill-inline .fa-robot { color: #FF9800; }       /* Agentic AI */
+.software-skill-inline .fa-brain { color: #9C27B0; }       /* Generative AI */
+.software-skill-inline .fa-users { color: #2196F3; }       /* Agile */
+.software-skill-inline .fa-sync { color: #607D8B; }        /* CI/CD */
+.software-skill-inline .fa-paper-plane { color: #FF6C37; }  /* orange-red */
+
+/* Hover: add animation (grow + glow) */
+.software-skill-inline i:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
