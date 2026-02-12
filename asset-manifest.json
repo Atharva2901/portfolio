@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4b8602f8.css",
-    "main.js": "/portfolio/static/js/main.1ca04c82.js",
+    "main.js": "/portfolio/static/js/main.f0c11d34.js",
     "static/css/64.fa801220.chunk.css": "/portfolio/static/css/64.fa801220.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.0754b571.chunk.css": "/portfolio/static/css/769.0754b571.chunk.css",
@@ -12,7 +12,6 @@
     "static/media/Global.png": "/portfolio/static/media/Global.a58b2a4c18eb2d97dbcf.png",
     "static/media/amazon_nlp.png": "/portfolio/static/media/amazon_nlp.8990484a8d0a51539915.png",
     "static/media/researchlogo.png": "/portfolio/static/media/researchlogo.992a7f9212a1d40ee9e8.png",
-    "static/media/Atharva Deshmukh_Resume.pdf": "/portfolio/static/media/Atharva Deshmukh_Resume.e04d3b937d0d6612b5fb.pdf",
     "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/YCCElogo.jpg": "/portfolio/static/media/YCCElogo.7a531817607209476cc6.jpg",
     "static/media/Agustina.woff": "/portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
@@ -28,7 +27,7 @@
     "index.html": "/portfolio/index.html",
     "static/media/talksCardBack.svg": "/portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.4b8602f8.css.map": "/portfolio/static/css/main.4b8602f8.css.map",
-    "main.1ca04c82.js.map": "/portfolio/static/js/main.1ca04c82.js.map",
+    "main.f0c11d34.js.map": "/portfolio/static/js/main.f0c11d34.js.map",
     "64.fa801220.chunk.css.map": "/portfolio/static/css/64.fa801220.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.0754b571.chunk.css.map": "/portfolio/static/css/769.0754b571.chunk.css.map",
@@ -36,6 +35,6 @@
   },
   "entrypoints": [
     "static/css/main.4b8602f8.css",
-    "static/js/main.1ca04c82.js"
+    "static/js/main.f0c11d34.js"
   ]
 }
