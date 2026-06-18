@@ -1,36 +1,57 @@
-@font-face {
-  font-family: "Agustina Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Agustina Regular"),
-    url("./assets/fonts/Agustina.woff") format("woff");
-  font-display: swap;
+:root {
+  --bg-0: #08090a;
+  --bg-1: #0e0f11;
+  --bg-2: #16181b;
+  --bg-3: #1e2125;
+  --ink-1: #f2f3f5;
+  --ink-2: #a9aeb5;
+  --ink-3: #6e747c;
+  --ink-4: #494f56;
+  --accent: #c4f25c;
+  --accent-hover: #d4f97e;
+  --accent-press: #9bc23f;
+  --accent-fill: rgba(196, 242, 92, 0.14);
+  --accent-fill-faint: rgba(196, 242, 92, 0.07);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --border-focus: rgba(255, 255, 255, 0.22);
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 8px 24px -12px rgba(0, 0, 0, 0.6);
+  --glow-soft: 0 0 40px -10px rgba(196, 242, 92, 0.25);
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-base: 200ms;
+  --dur-fast: 120ms;
+  --section-y: clamp(64px, 10vw, 160px);
+  --gutter: clamp(20px, 5vw, 64px);
 }
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"),
-    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
-  font-display: swap;
-}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: var(--font-mono);
 }
+
 html,
 body {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  font: 16px/1.6 var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-1);
+  color: var(--ink-2);
 }
-/* Media Query */
+
 @media (max-width: 1380px) {
   html,
   body {
-    font-size: rem;
-    line-height: normal;
+    font-size: 15px;
+    line-height: 1.6;
   }
 }

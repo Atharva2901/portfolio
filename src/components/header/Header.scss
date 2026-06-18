@@ -1,30 +1,33 @@
 @import "../../_globalColor";
 
-/*React-headroom*/
 .headroom-wrapper {
   max-height: 100px;
 }
 
-/* header */
-
 .dark-menu {
-  background-color: $darkBackground !important;
-  color: $textColorDark;
+  background-color: rgba(14, 15, 17, 0.78) !important;
+  backdrop-filter: saturate(140%) blur(14px);
+  -webkit-backdrop-filter: saturate(140%) blur(14px);
+  color: var(--ink-1);
 }
 
 .dark-menu li a {
-  color: $textColorDark !important;
+  color: var(--ink-2) !important;
 }
 
 .dark-menu li a:hover {
-  background-color: $buttonColor !important;
+  color: var(--accent) !important;
+  background-color: transparent !important;
 }
 
 .header {
-  background-color: $lightBackground1;
+  background-color: rgba(14, 15, 17, 0.78);
+  backdrop-filter: saturate(140%) blur(14px);
+  -webkit-backdrop-filter: saturate(140%) blur(14px);
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .header ul {
@@ -35,25 +38,29 @@
 }
 
 .grey-color {
-  color: $subTitle;
+  color: var(--ink-3);
 }
 
 .header li a {
   display: block;
   padding: 15px 20px;
-  color: $textColor;
+  color: var(--ink-2);
   text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  transition: color var(--dur-base) var(--ease-out);
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: $headerHoverBG;
+  background-color: transparent;
+  color: var(--accent);
 }
 
 .header .logo {
   display: block;
   flex: none;
-  
   float: left;
   font-size: 1.5em;
   text-decoration: none;
@@ -61,32 +68,20 @@
   line-height: normal;
 }
 
-// @font-face {
-//   font-family: 'Montserrat';
-//   src: url('./assets/fonts/Montserrat-Bold.ttf') format('truetype');
-//   font-weight: 700;
-// }
-
-
-
 .header .logo-name {
-  font-family: "Agustina Regular";
-  font-weight: bolder;
-  // font-weight: italic;
+  font-family: var(--font-display);
+  font-weight: 700;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
+  color: var(--ink-1);
 }
-
-/* menu */
 
 .header .menu {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
 }
-
-/* menu icon */
 
 .header .menu-icon {
   cursor: pointer;
@@ -98,7 +93,7 @@
 }
 
 .header .menu-icon .navicon {
-  background: $iconBackground;
+  background: var(--ink-2);
   display: block;
   height: 2px;
   position: relative;
@@ -107,12 +102,12 @@
 }
 
 .header .menu-icon .navicon-dark {
-  background: $textColorDark;
+  background: var(--ink-2);
 }
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: $iconBackground;
+  background: var(--ink-2);
   content: "";
   display: block;
   height: 100%;
@@ -123,13 +118,7 @@
 
 .header .menu-icon .navicon-dark:before,
 .header .menu-icon .navicon-dark:after {
-  background: $textColorDark !important;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
+  background: var(--ink-2) !important;
 }
 
 .header .menu-icon .navicon:before {
@@ -139,8 +128,6 @@
 .header .menu-icon .navicon:after {
   top: -5px;
 }
-
-/* menu btn */
 
 .header .menu-btn {
   display: none;
@@ -166,8 +153,6 @@
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-
-/* 48em = 768px */
 
 @media (min-width: 48em) {
   .header li {

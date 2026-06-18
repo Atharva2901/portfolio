@@ -6,22 +6,16 @@
 }
 
 .education-card:hover + .education-card-border {
-  border-color: $educationCardBorder;
+  border-color: var(--accent);
   width: 100%;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
   transition: width 0.6s ease-in-out;
 }
 
 .education-card-border {
   height: 30px;
   width: 80%;
-  border-top: 2px solid $lightBorder1;
+  border-top: 1px solid var(--border-subtle);
   margin-bottom: 20px;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
   transition: width 0.6s ease-in-out;
 }
 
@@ -32,8 +26,10 @@
 
 .education-text-school {
   margin: 0;
-  font-size: 28px;
+  font-family: var(--font-display);
+  font-size: 24px;
   font-weight: 700;
+  color: var(--ink-1);
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -43,10 +39,11 @@
 .education-roundedimg {
   object-fit: cover;
   margin-right: 2rem;
-  width: 6rem;
-  height: 6rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
-  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.6);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
 }
 
 .education-card-right {
@@ -54,17 +51,20 @@
 }
 
 .education-text-subHeader {
-  color: $textColor;
-  font-weight: 700;
-  font-size: 19px;
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 17px;
   margin: 0px;
   padding-top: 0.8rem;
   line-height: normal;
 }
 
 .education-text-duration {
-  color: $titleColor;
-  font-size: 19px;
+  color: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
   margin: 0px;
   padding-top: 0.5rem;
 }
@@ -72,13 +72,15 @@
 .education-text-desc {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .education-text-bullets > ul {
   margin-top: 0.5rem;
 }
-
-/* Media Query */
 
 @media (max-width: 1380px) {
   .education-card {
@@ -100,7 +102,7 @@
     height: 23px;
   }
   .education-text-duration {
-    font-size: 16px;
+    font-size: 11px;
   }
   .education-roundedimg {
     width: 4rem;

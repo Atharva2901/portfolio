@@ -1,7 +1,10 @@
 .project-title {
+  font-family: var(--font-display);
+  font-weight: 700;
   font-size: 52px;
-  font-weight: 400;
+  letter-spacing: -0.015em;
   line-height: normal;
+  color: var(--ink-1);
 }
 
 .startup-project-text img {
@@ -9,7 +12,6 @@
   height: auto;
 }
 
-/* Projects grid */
 .repo-cards-div-main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -18,7 +20,6 @@
   width: 100%;
 }
 
-/* Let cards fill the grid cell */
 .github-repo-card,
 .repo-card {
   height: 100%;
@@ -26,17 +27,14 @@
   flex-direction: column;
 }
 
-/* Tweak title size */
 @media (max-width: 1380px) {
   .project-title { font-size: 40px; }
 }
 
-/* Stack cards on small screens */
 @media (max-width: 900px) {
   .repo-cards-div-main { grid-template-columns: 1fr; }
 }
 
-/* Optional: center title on phones */
 @media (max-width: 768px) {
   .project-title { font-size: 30px; text-align: center; }
 }

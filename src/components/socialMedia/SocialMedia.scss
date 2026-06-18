@@ -9,7 +9,7 @@
 }
 
 .icon-button i {
-  color: $textColorDark;
+  color: var(--ink-3);
   border-radius: 2.6rem;
   cursor: pointer;
   display: inline-block;
@@ -19,56 +19,28 @@
   margin: 0 5px;
   position: relative;
   text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   width: 2.6rem;
   margin-bottom: 10px;
-  transition: 0.2s ease-in;
+  background-color: transparent;
+  border: 1px solid var(--border-subtle);
+  transition: color var(--dur-base) var(--ease-out),
+    border-color var(--dur-base) var(--ease-out);
 }
 
-.facebook i {
-  background-color: $faceBook;
-}
-
-.linkedin i {
-  background-color: $linkedin;
-}
-
-.github i {
-  background-color: $github;
-}
-
-.gitlab i {
-  background-color: $gitlab;
-}
-
-.google i {
-  background-color: $google;
-}
-
-.twitter i {
-  background-color: $twitter;
-}
-
-.medium i {
-  background-color: $medium;
-}
-
-.stack-overflow i {
-  background-color: $stackoverflow;
-}
-
-.kaggle i {
-  background-color: $kaggle;
-}
-
+.facebook i,
+.linkedin i,
+.github i,
+.gitlab i,
+.google i,
+.twitter i,
+.medium i,
+.stack-overflow i,
+.kaggle i,
 .instagram i {
-  background-color: $instagram;
+  background-color: transparent;
 }
 
-/* Hover Transition */
 .twitter i:hover,
 .google i:hover,
 .gitlab i:hover,
@@ -79,10 +51,11 @@
 .stack-overflow i:hover,
 .kaggle i:hover,
 .medium i:hover {
-  background-color: $textColor;
+  background-color: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
-/* Media Query */
 @media (max-width: 768px) {
   .social-media-div {
     text-align: center;

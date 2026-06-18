@@ -1,6 +1,9 @@
 .education-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
   font-size: 56px;
-  font-weight: 400;
+  letter-spacing: -0.015em;
+  color: var(--ink-1);
 }
 
 .education-section {

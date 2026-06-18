@@ -5,8 +5,11 @@
 }
 
 .experience-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
   font-size: 56px;
-  font-weight: 400;
+  letter-spacing: -0.015em;
+  color: var(--ink-1);
 }
 
 .experience-container {
@@ -20,8 +23,6 @@
 .experience-container > * {
   flex: 1;
 }
-
-/* Media Query */
 
 @media (max-width: 1380px) {
   .experience-heading {

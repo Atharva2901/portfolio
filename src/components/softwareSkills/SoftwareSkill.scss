@@ -16,16 +16,23 @@
 }
 
 .software-skill-inline > i {
-  color: $subTitle;
+  color: var(--ink-3);
+  transition: color var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
 }
 
 .software-skill-inline > i:hover {
-  color: $skillsColor;
+  color: var(--accent);
+  transform: scale(1.1);
 }
+
 .software-skill-inline > p {
-  color: $subTitle;
+  color: var(--ink-3);
+  font-family: var(--font-mono);
   font-size: 10px;
+  letter-spacing: 0.02em;
+  transition: color var(--dur-base) var(--ease-out);
 }
+
 .software-skill-inline > i:hover ~ p {
-  color: $skillsColor;
+  color: var(--accent);
 }

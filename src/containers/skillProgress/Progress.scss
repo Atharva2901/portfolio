@@ -3,9 +3,7 @@
 .meter {
   height: 20px;
   position: relative;
-  background: $progressBarBackground;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
+  background: var(--bg-3);
   border-radius: 25px;
 }
 .meter > span {
@@ -15,12 +13,14 @@
   border-bottom-right-radius: 6px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: $progressBarSpanBG;
+  background-color: var(--accent);
   position: relative;
   overflow: hidden;
 }
 .skill {
   line-height: 3.5vw;
+  color: var(--ink-2);
+  font-family: var(--font-sans);
 }
 .skill-bars {
   font-size: 28px;
@@ -42,8 +42,6 @@
   max-width: 90%;
   height: auto;
 }
-
-/* Media Query */
 
 @media (max-width: 1456px) {
   .skills-bar {

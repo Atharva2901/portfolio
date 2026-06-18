@@ -2,14 +2,19 @@
 
 .footer-text {
   text-align: center;
-  color: $subTitle !important;
+  color: var(--ink-4) !important;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.02em;
 }
 
 .dark-mode {
-  color: $textColorDark !important;
+  color: var(--ink-1) !important;
 }
 
 .footer-div {
   margin-top: 2rem;
   padding-bottom: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 2rem;
 }

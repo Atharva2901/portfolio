@@ -4,6 +4,8 @@
   text-align: center;
   width: 100%;
   overflow-x: hidden;
+  background-color: var(--bg-1);
+  color: var(--ink-2);
 }
 
 .App-logo {
@@ -11,20 +13,20 @@
 }
 
 .App-header {
-  background-color: $appHeaderBG;
+  background-color: var(--bg-0);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(0.625rem + 2vmin);
-  color: $textColorDark;
+  color: var(--ink-1);
 }
 
 .App-link {
-  color: $appLink;
+  color: var(--accent);
 }
 
 .subTitle {
-  color: $subTitle;
+  color: var(--ink-3);
 }

@@ -18,11 +18,7 @@
 }
 
 .subTitle {
-  color: $subTitle !important;
-}
-
-.greeting-main {
-  display: flex;
+  color: var(--ink-3) !important;
 }
 
 .greeting-main > * {
@@ -43,14 +39,20 @@
 }
 
 .greeting-text {
+  font-family: var(--font-display);
+  font-weight: 700;
   font-size: 70px;
-  line-height: 1.1;
-  color: $textColor !important;
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  color: var(--ink-1) !important;
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  max-width: 56ch;
 }
 
 .greeting-image-div > img {
@@ -67,36 +69,21 @@
 }
 
 @keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(-10deg);
-  }
-  20% {
-    transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-10deg);
-  }
-  40% {
-    transform: rotate(9deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-10deg); }
+  20% { transform: rotate(12deg); }
+  30% { transform: rotate(-10deg); }
+  40% { transform: rotate(9deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }
 
-/* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
     font-size: 50px;
   }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media (max-width: 768px) {
